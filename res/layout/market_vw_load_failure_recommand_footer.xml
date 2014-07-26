@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/market_selector_recommend_item_background" android:paddingLeft="@dimen/market_recomment_item_distance_h" android:paddingRight="@dimen/market_recomment_item_distance_h" android:paddingBottom="@dimen/market_recomment_item_distance_h" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/load_failure_recommand_footer_layout" android:background="@drawable/common_card_bg" android:layout_width="fill_parent" android:layout_height="@dimen/market_loadfailure_recommend_footer_height">
+        <TextView android:textSize="@dimen/market_font_16" android:id="@id/tv_load_failure_footer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_h" android:text="@string/market_detail_more_app" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_load_failure_arraw" android:background="@drawable/market_icon_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/market_padding_left_16" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

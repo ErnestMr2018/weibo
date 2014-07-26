@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/market_recomment_item_distance_h" android:paddingRight="@dimen/market_recomment_item_distance_h" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_subject_cardimg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_subject_cardimg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/market_recomment_item_distance_v" android:scaleType="fitXY" />
+        <View android:layout_gravity="center" android:id="@id/iv_subject_cardimg_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/market_recomment_item_distance_v" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/market_font_16" android:textColor="#ffffffff" android:layout_gravity="bottom|left|center" android:id="@id/tv_subject_cardimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

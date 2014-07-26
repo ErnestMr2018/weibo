@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/startService" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="StartService" />
+        <CheckBox android:id="@id/configure_momery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_momery" />
+        <CheckBox android:id="@id/configure_cpu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_cpu" />
+        <CheckBox android:id="@id/configure_network" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_network" />
+        <RadioGroup android:id="@id/mutex" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/configure_thread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_thread" />
+            <RadioButton android:id="@id/configure_largeContext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_largeContext" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Spinner android:id="@id/configure_instance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_below="@id/configure_largeContext" />
+                <RadioGroup android:id="@id/alert_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/configure_instance">
+                    <RadioButton android:id="@id/alert_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="普通报警" />
+                    <RadioButton android:id="@id/alert_notfront" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="不在最前报警" />
+                </RadioGroup>
+            </RelativeLayout>
+            <RadioButton android:id="@id/configure_rank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_rank" />
+            <RadioButton android:id="@id/configure_none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_none" />
+        </RadioGroup>
+        <CheckBox android:id="@id/configure_fps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="configure_fps(not support yet)" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextSize" />
+        <Spinner android:id="@id/configure_textSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextColor" />
+        <Spinner android:id="@id/configure_textColor" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

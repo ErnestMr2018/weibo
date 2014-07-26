@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/card_inner_title_text_size" android:id="@id/tv_card_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_margin_top" android:layout_marginBottom="2.0dip" />
+    <LinearLayout android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_below="@id/tv_card_title">
+        <include android:id="@id/fr_people1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+        <include android:id="@id/fr_people7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" layout="@layout/page_small_portrait_view" />
+    </LinearLayout>
+</RelativeLayout>

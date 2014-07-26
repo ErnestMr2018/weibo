@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lyInviteItemPortrait" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.3299866dip">
+        <ImageView android:id="@id/ivInviteItemPortrait" android:padding="0.0dip" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" style="@style/small_portrait" />
+        <ImageView android:id="@id/ivInviteItemPortraitRound" android:saveEnabled="true" android:layout_width="@dimen/small_portrait_width" android:layout_height="@dimen/small_portrait_width" android:src="@drawable/portrait_round_small" android:scaleType="fitXY" />
+        <ImageView android:id="@id/ivInviteItemPortraitV" style="@style/small_portrait_mask" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lyInviteRightLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tvInviteItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="165.0dip" android:text="" android:singleLine="true" />
+            <ImageView android:id="@id/ivInviteCrown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivInviteItemV" android:visibility="gone" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/tvInviteItemDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/tvInviteContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+        <com.sina.weibo.view.MBlogTextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/tvInviteSubContent" android:background="@drawable/popup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:bufferType="spannable" />
+        <LinearLayout android:gravity="right" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/getfriend_contacts_invite_text" android:gravity="center" android:id="@id/tvInviteAlreadyHandled" android:background="@drawable/userinfo_relationship_invitebutton" android:visibility="gone" android:layout_width="@dimen/notice_invite_btn_width" android:layout_height="wrap_content" android:text="@string/already_handled" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/getfriend_contacts_invite_text" android:gravity="center" android:id="@id/inviteAdmit" android:background="@drawable/userinfo_add_attention" android:layout_width="@dimen/notice_invite_btn_width" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/invite_admit" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/getfriend_contacts_invite_text" android:gravity="center" android:id="@id/inviteIgnore" android:background="@drawable/userinfo_relationship_invitebutton" android:layout_width="@dimen/notice_invite_btn_width" android:layout_height="wrap_content" android:text="@string/invite_ignore" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

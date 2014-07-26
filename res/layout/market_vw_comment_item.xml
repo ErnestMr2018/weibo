@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/market_selector_comment_item_background" android:paddingLeft="@dimen/market_padding_10" android:paddingTop="7.0dip" android:paddingRight="@dimen/market_padding_10" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_comment_portrait" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_portrait_icon" android:layout_width="@dimen/market_app_detail_portrait" android:layout_height="@dimen/market_app_detail_portrait" android:src="@drawable/portrait" android:scaleType="fitXY" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_comment_txt" android:paddingLeft="@dimen/market_padding_10" android:paddingRight="@dimen/market_padding_10" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_comment_portrait">
+        <TextView android:textSize="@dimen/market_font_12" android:id="@id/tv_comment_people_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/market_font_12" android:id="@id/tv_comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rl_comments_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tv_comment_people_name">
+            <TextView android:textSize="@dimen/market_font_14" android:layout_gravity="left" android:id="@id/tv_comments" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textScaleX="0.99" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/iv_comment_line" android:background="@drawable/market_default_dashline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_comment_txt" />
+</RelativeLayout>

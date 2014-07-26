@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_1_n" android:id="@id/home" android:title="@string/main_home" />
+    <item android:icon="@drawable/tabbar_icon_compose_add_meizu" android:id="@id/compose" android:title="@string/more" />
+    <item android:icon="@drawable/icon_2_n" android:id="@id/message" android:title="@string/main_news" />
+    <item android:icon="@drawable/icon_3_n" android:id="@id/info" android:title="@string/main_my_info" />
+    <item android:icon="@drawable/icon_4_n" android:id="@id/square" android:title="@string/menu_search" />
+    <item android:icon="@drawable/menu_exit" android:id="@id/exit" android:title="@string/exit" />
+</menu>

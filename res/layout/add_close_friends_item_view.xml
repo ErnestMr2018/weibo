@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_common_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/close_friends_section_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/recommend_close_friends" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/lyItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginTop="3.0dip" android:layout_marginRight="@dimen/portrait_common_margin_right">
+            <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_middle_style" />
+            <ImageView android:id="@id/ivItemPortraitV" style="@style/portrait_avatar_style" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:id="@id/btn_area" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:textSize="14.0sp" android:textColor="@color/index_item_title" android:gravity="center" android:id="@id/close_friends_invite_btn" android:background="@drawable/common_button_white_bg" android:focusable="false" android:layout_width="@dimen/edit_relation_button_width" android:layout_height="@dimen/edit_relation_button_height" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/close_friend_loading" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse" />
+            <ViewStub android:id="@id/close_friends_checkbox_stub" android:layout="@layout/add_close_friends_checkbox_view" android:inflatedId="@id/close_friends_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/linear_layout_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="85.0dip" android:layout_toRightOf="@id/lyItemPortrait" android:layout_alignTop="@id/lyItemPortrait">
+            <TextView android:textSize="16.0sp" android:typeface="monospace" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tvItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <ImageView android:id="@id/mblogCrown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tvItemName" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:typeface="monospace" android:textColor="#ff8f939a" android:id="@id/tvItemRemark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/btn_area" android:layout_toRightOf="@id/lyItemPortrait" android:layout_below="@id/linear_layout_up" />
+        <TextView android:textSize="14.0sp" android:typeface="monospace" android:textColor="#ff808080" android:id="@id/tvItemContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_area" android:layout_toRightOf="@id/lyItemPortrait" android:layout_below="@id/linear_layout_up" />
+        <TextView android:textSize="14.0sp" android:typeface="monospace" android:id="@id/tvItemSummary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="14.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_area" android:layout_toRightOf="@id/lyItemPortrait" android:layout_below="@id/linear_layout_up" />
+    </RelativeLayout>
+</LinearLayout>

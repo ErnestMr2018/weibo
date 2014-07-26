@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivVerticalDivider" android:layout_width="wrap_content" android:layout_height="30.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/ivHorizontalDivider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/flButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_toLeftOf="@id/ivVerticalDivider" android:layout_above="@id/ivHorizontalDivider">
+        <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/tvIcon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lyMultiIcon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="bottom|center" android:id="@id/tvNum" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:ellipsize="end" android:gravity="top|center" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/editgroup_item_paddingleft" android:paddingTop="@dimen/editgroup_item_padding" android:paddingRight="@dimen/editgroup_item_padding" android:paddingBottom="@dimen/editgroup_item_padding" android:layout_width="fill_parent" android:layout_height="@dimen/editgroup_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lyGroupName" android:background="@drawable/editgroup_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivGroupDelete" android:layout_alignParentLeft="true">
+        <EditText android:textSize="15.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/etGroupName" android:background="@null" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/tvGroupPrompt" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+        <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:id="@id/tvAdd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffff0000" android:id="@id/tvGroupPrompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivGroupDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/editgroup_item_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

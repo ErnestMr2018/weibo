@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_feed_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/fl_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.sina.weibo.view.PullDownView android:id="@id/pd_blog_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/lvUser" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@drawable/divider_horizontal_timeline" android:dividerHeight="1.0dip" />
+        </com.sina.weibo.view.PullDownView>
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/update_toast" android:background="@drawable/new_blog_toast" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

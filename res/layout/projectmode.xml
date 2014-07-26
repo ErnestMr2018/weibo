@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffc7edcc" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/default_show_layout" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/project_mode" android:layout_alignParentLeft="true" />
+            <Button android:textColor="@*android:color/black" android:id="@id/projectmode_defaultBtn" android:background="@drawable/login_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_settings" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/vm_show_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vm_value" />
+            <TextView android:textColor="@*android:color/black" android:id="@id/current_vm" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/version_show_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_value" />
+            <TextView android:textColor="@*android:color/black" android:id="@id/current_version" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/new_wm_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_wm" />
+            <EditText android:textColor="@*android:color/black" android:id="@id/new_wm_et" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/new_wm_hint" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/new_from_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_from" />
+            <EditText android:textColor="@*android:color/black" android:id="@id/new_from_et" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/new_from_hint" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/new_server_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_server" />
+            <Spinner android:id="@id/new_server_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/new_port_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_port" />
+            <EditText android:id="@id/new_port_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/new_port_hint" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/cbPushEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_push_enable" />
+            <CheckBox android:id="@id/cbDianXinEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_dianxin_enable" />
+            <CheckBox android:id="@id/cbAPPMarketEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_appmarket_enable" />
+            <CheckBox android:id="@id/cbPopupSDKEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_popupsdk_enable" />
+            <CheckBox android:id="@id/cbLogALLEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_logall_enable" />
+            <CheckBox android:id="@id/cbUploadServerDeafult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_upload_server" />
+            <CheckBox android:id="@id/cbUploadServer80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_upload_server_80" />
+        </LinearLayout>
+        <CheckBox android:id="@id/cbMemoryDebug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_memory_debug" />
+        <TextView android:id="@id/trafficInfos" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <CheckBox android:id="@id/cbProjectShortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_shortcut" />
+        <Button android:id="@id/navigatorreset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_navigator_reset" />
+        <CheckBox android:id="@id/cbUrlLogEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_url_log" />
+        <Button android:id="@id/sendEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_sendemail" />
+        <CheckBox android:id="@id/cb_test_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_test_theme" />
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/project_theme_pkg_name" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <Button android:id="@id/bt_add_test_theme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_add_test_theme" android:layout_alignParentRight="true" />
+            <EditText android:id="@id/et_theme_pkg_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/project_theme_pkg_name_hint" android:singleLine="true" android:layout_toLeftOf="@id/bt_add_test_theme" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/ok_or_cancel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@*android:color/black" android:id="@id/cancelBtn" android:background="@drawable/regist_weibo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/projectmode_cancel" android:layout_weight="1.0" />
+            <Button android:textColor="@*android:color/black" android:id="@id/testBtn" android:background="@drawable/regist_weibo" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/projectmode_memory" android:layout_weight="1.0" />
+            <Button android:textColor="@*android:color/black" android:id="@id/okBtn" android:background="@drawable/login_weibo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/projectmode_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

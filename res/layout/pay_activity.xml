@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ly_page" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_page" android:background="@null" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="true" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_security_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pay_security_tips_height" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="top" android:id="@id/iv_security_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commercialize_payment_insurance_icon" />
+        <TextView android:textSize="10.0sp" android:layout_gravity="top" android:id="@id/tv_security_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/pay_security_tips" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/card_inner_title_text_size" android:id="@id/tv_card_pic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_margin_top" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_pic_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_below="@id/tv_card_pic_title">
+        <include android:id="@id/fr_pic1" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/page_big_pic_view" />
+        <include android:id="@id/fr_pic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_big_pic_view" />
+        <include android:id="@id/fr_pic3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_big_pic_view" />
+        <include android:id="@id/fr_pic4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" layout="@layout/page_big_pic_view" />
+    </LinearLayout>
+</RelativeLayout>

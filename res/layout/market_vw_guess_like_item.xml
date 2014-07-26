@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gusee_like_item" android:background="@drawable/market_selector_guess_like_item" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guess_like_icon" android:layout_width="@dimen/market_icon_size" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="10.0dip" android:src="@drawable/market_icon_app_default" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/guess_like_icon">
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="left" android:id="@id/guess_like_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试应用1" android:maxEms="5" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="left" android:id="@id/guess_like_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="测试详情" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

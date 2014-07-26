@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subject_layout" android:background="@drawable/market_selector_recommend_item_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:attr="http://schemas.android.com/apk/res/com.sina.weibo">
+    <ListView android:id="@id/subject_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/baselayout_title_height" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:layout_alignParentTop="true" />
+    <com.sina.weibo.appmarket.widget.ReloadView android:id="@id/reload" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tb_title" />
+    <com.sina.weibo.appmarket.widget.ProgressView android:id="@id/rl_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tb_title" />
+    <com.sina.weibo.appmarket.widget.TitleBar android:id="@id/tb_title" android:layout_width="fill_parent" android:layout_height="@dimen/baselayout_title_height" android:layout_alignParentTop="true" attr:left_type="1" attr:right_type2="8" attr:middle_text="@string/market_title_activity_app_subjet" />
+    <ImageView android:id="@id/iv_load_screenshots_on_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

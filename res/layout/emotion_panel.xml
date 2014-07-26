@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/emotion_recent_stub" android:layout="@layout/emotionpanel_page_stub" android:inflatedId="@id/emotion_recent" android:layout_width="fill_parent" android:layout_height="179.0dip" />
+    <com.sina.weibo.view.EmotionPanelPager android:id="@id/emotion_default" android:layout_width="fill_parent" android:layout_height="179.0dip" />
+    <ViewStub android:id="@id/emotion_emoji_stub" android:layout="@layout/emotionpanel_page_stub" android:inflatedId="@id/emotion_emoji" android:layout_width="fill_parent" android:layout_height="179.0dip" />
+    <ViewStub android:id="@id/emotion_sina_flower_stub" android:layout="@layout/emotionpanel_page_stub" android:inflatedId="@id/emotion_sina_flower" android:layout_width="fill_parent" android:layout_height="179.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/emotion_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_tab_text" android:gravity="center" android:id="@id/tab_recent" android:layout_width="0.0dip" android:layout_height="@dimen/emotion_tab_height" android:text="@string/emotion_recent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_tab_text" android:gravity="center" android:id="@id/tab_default" android:layout_width="0.0dip" android:layout_height="@dimen/emotion_tab_height" android:text="@string/emotion_default" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_tab_text" android:gravity="center" android:id="@id/tab_emoji" android:layout_width="0.0dip" android:layout_height="@dimen/emotion_tab_height" android:text="@string/emoji" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_tab_text" android:gravity="center" android:id="@id/tab_sina_flower" android:layout_width="0.0dip" android:layout_height="@dimen/emotion_tab_height" android:text="@string/sina_flower" android:layout_weight="1.0" />
+    </LinearLayout>
+</merge>

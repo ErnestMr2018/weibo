@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/emotion_page_root" android:background="@drawable/bg_face" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:gravity="center" android:id="@id/emotion_page_empty" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/emotion_page_empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compose_no_emoticon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/emotion_tab_text_size" android:textColor="@color/emotion_recent_used" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/emotion_recent_used_hint" android:layout_below="@id/emotion_page_empty_img" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.sina.weibo.view.PageIndicatorDrawable android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+</LinearLayout>

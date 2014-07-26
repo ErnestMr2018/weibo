@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/widget_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_widget" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/widget_btns" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/widget_btn_up" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_btn_up_d" android:scaleType="centerInside" android:layout_weight="1.0" />
+            <ImageView android:id="@id/widget_btn_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_btn_down_d" android:scaleType="centerInside" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/widget_usr_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="12.0dip" android:src="@drawable/portrait" android:scaleType="fitXY" />
+        <TextView android:textColor="#ff8e8e8e" android:id="@id/widget_blog_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@id/widget_btns" />
+        <ImageView android:id="@id/widget_blog_pic" android:background="@drawable/pic_h" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/widget_blog_time" />
+        <RelativeLayout android:id="@id/widget_relate_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/widget_blog_pic" android:layout_toRightOf="@id/widget_usr_image">
+            <TextView android:textSize="15.0sp" android:textColor="#ffe36100" android:ellipsize="start" android:id="@id/widget_usr_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/widget_usr_v" android:background="@drawable/v" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/widget_usr_name" />
+        </RelativeLayout>
+        <TextView android:textColor="#ff313131" android:id="@id/widget_blog_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@id/widget_btns" android:layout_toRightOf="@id/widget_usr_image" android:layout_below="@id/widget_relate_name" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/widget_block_login" android:background="@drawable/bg_widget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/widget_refresh_btn" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ff0000bb" android:gravity="center" android:id="@id/widget_message_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:maxLines="3" android:minLines="1" android:layout_above="@id/widget_refresh_btn" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/widget_block_loading" android:background="@drawable/bg_widget" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/widget_progress_comp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/progress_small" style="@android:style/Widget.ProgressBar.Small" />
+            <TextView android:textColor="#ff0000bb" android:id="@id/widget_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/weibo_running" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/media_video_player_layout" android:background="@drawable/videoplayer_erect_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.media.VideoView android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/media_waiting_sina_layout" android:background="@drawable/videoplayer_erect_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip">
+                <ImageView android:background="@drawable/videoplayer_loading_background" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+                <ImageView android:id="@id/meida_sina_loading_img" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/videoplayer_loading" />
+            </FrameLayout>
+            <TextView android:textSize="9.0sp" android:textColor="#ff7c7c7c" android:id="@id/video_loading_sina_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="0%" />
+            <TextView android:textSize="9.0sp" android:textColor="#ff7c7c7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/media_video_loading_text" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/video_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <FrameLayout android:layout_width="32.0dip" android:layout_height="32.0dip">
+            <ImageView android:background="@drawable/videoplayer_playerloading_background" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+            <ImageView android:id="@id/media_activity_sina_small" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/videoplayer_playerloading" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:layout_gravity="center_vertical" android:id="@id/video_loading_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_video_small_loading_text" />
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:layout_gravity="center_vertical" android:id="@id/video_small_loading_progress" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/item_update_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/item_icon" android:layout_width="@dimen/market_icon_size" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="@dimen/market_recomment_item_distance_nocard_h" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_action_info_layout" android:layout_width="wrap_content" android:layout_height="@dimen/market_recomment_list_item_height" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.sina.weibo.appmarket.widget.CircleProgressButton android:id="@id/item_update_button" style="@style/market_circle_progress_button" />
+            <com.sina.weibo.appmarket.widget.CircleProgressButton android:id="@id/item_like_button" android:visibility="gone" style="@style/market_circle_progress_button" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_info" android:layout_width="fill_parent" android:layout_height="@dimen/market_icon_size" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/item_action_info_layout" android:layout_toRightOf="@id/item_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/market_font_16" android:ellipsize="end" android:gravity="left" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/item_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/market_font_12" android:layout_gravity="center" android:id="@id/app_size_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/market_text_app_size_tip" android:singleLine="true" />
+                    <FrameLayout android:id="@id/layout_full_size" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/market_font_12" android:layout_gravity="center" android:id="@id/full_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+                        <ImageView android:layout_gravity="center" android:id="@id/size_paint_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/market_paint_line" />
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/market_font_12" android:id="@id/patch_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/market_font_12" android:ellipsize="end" android:gravity="bottom|left|center" android:layout_gravity="center_vertical" android:id="@id/tv_like_reason" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/item_arrow" android:background="@drawable/market_icon_arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_weight="0.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/item_layout_like" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name" android:layout_alignParentLeft="true" layout="@layout/market_vw_like_num" />
+            <RelativeLayout android:gravity="bottom" android:id="@id/rl_download_manage_item_size" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/item_name" android:layout_alignLeft="@id/item_name" android:layout_alignParentLeft="true">
+                <TextView android:textSize="12.0sp" android:id="@id/complete_download_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0M/0M" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="12.0sp" android:id="@id/tv_download_manage_item_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/complete_download_size" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff838383" android:gravity="top" android:id="@id/item_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/item_like_reason" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_nocard_h" android:layout_marginBottom="@dimen/market_recomment_item_distance_inner_v" layout="@layout/market_vw_like_reason" />
+    <RelativeLayout android:id="@id/toolbar_item_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/item_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/market_list_item_divider_margin_size" android:layout_marginRight="@dimen/market_list_item_divider_margin_size" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/toolbar_item_action_layout" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_below="@id/item_divider">
+            <TextView android:textSize="@dimen/market_list_circle_button_text_size" android:gravity="center" android:id="@id/toolbar_item_action" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_list_action_btn_margin_left" android:layout_marginRight="@dimen/market_list_action_btn_margin_right" android:minWidth="@dimen/market_list_action_layout_width" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:gravity="left|center" android:id="@id/toolbar_item_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/market_recomment_item_distance_h" android:layout_marginRight="16.0dip" android:singleLine="true" android:layout_toLeftOf="@id/toolbar_item_action" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:gravity="left" android:id="@id/toolbar_item_hint" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/market_recomment_item_distance_h" android:layout_marginRight="57.0dip" android:layout_below="@id/toolbar_item_action_layout" />
+    </RelativeLayout>
+</LinearLayout>

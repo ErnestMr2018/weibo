@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/ivTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_margin_top" android:singleLine="true" />
+    <RelativeLayout android:id="@id/lyPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ivTitle">
+        <ImageView android:id="@id/ivTrendPic" android:saveEnabled="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.sina.weibo.view.CardOperationBigButtonView android:id="@id/card_button" android:background="@drawable/default_btn_bg" android:layout_width="70.0dip" android:layout_height="fill_parent" android:minHeight="90.0dip" android:layout_below="@id/ivTitle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/lyContentRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="@dimen/trend_item_right_margin" android:minHeight="90.0dip" android:layout_toLeftOf="@id/card_button" android:layout_toRightOf="@id/lyPortrait" android:layout_below="@id/ivTitle">
+        <TextView android:textSize="15.0sp" android:textColor="#ff202020" android:ellipsize="end" android:id="@id/tvTrendTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:maxLines="2" />
+        <LinearLayout android:id="@id/ll_card_info2" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="left" android:id="@id/tv_card_info2" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="13.0sp" android:gravity="right" android:id="@id/tv_card_info3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

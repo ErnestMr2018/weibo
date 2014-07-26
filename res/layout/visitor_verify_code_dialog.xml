@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/main_content_retweet_text_color" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="18.0dip" android:text="@string/new_regist_verification_code_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/login_imput_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+        <EditText android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:textColorHint="@color/empty_view_text_color" android:id="@id/verification_code" android:background="@null" android:paddingLeft="@dimen/new_regist_user_padding_left" android:layout_width="0.0dip" android:layout_height="@dimen/visitor_dialog_smscode_height_et" android:hint="@string/new_regist_input_code" android:numeric="integer" android:layout_weight="1.0" />
+        <ImageView android:id="@id/sms_code_tips_btn" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/login_clear_btn" android:scaleType="centerInside" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:layout_gravity="left" android:id="@id/tv_tips" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:maxLines="2" />
+    <Button android:textSize="18.0sp" android:textColor="@color/navigationbar_highlighted_text_color" android:id="@id/confirm_bt" android:background="@drawable/pop_dialog_btn_orange_background" android:layout_width="fill_parent" android:layout_height="@dimen/visitor_dialog_regist_height_et" android:layout_marginTop="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/ok" />
+</LinearLayout>

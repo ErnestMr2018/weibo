@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_coupon_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/page_news_flag" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_search_record_del" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_highlight_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/tv_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_coupon_des" android:layout_width="wrap_content" android:layout_height="@dimen/card_coupon_height" android:singleLine="true" android:layout_toLeftOf="@id/iv_search_record_del" android:layout_toRightOf="@id/iv_coupon_icon" />
+    <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_coupon_des_extr" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/card_coupon_height" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toLeftOf="@id/iv_highlight_icon" android:layout_toRightOf="@id/tv_coupon_des" />
+</RelativeLayout>

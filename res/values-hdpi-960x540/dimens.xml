@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lucky_bag_top">25.0dip</dimen>
+    <dimen name="lucky_bag_button_top">38.0dip</dimen>
+    <dimen name="lucky_bag_button_bottom">42.0dip</dimen>
+    <dimen name="lucky_bag_margin_bottom">20.0dip</dimen>
+    <dimen name="lucky_bag_award_text_width">230.0dip</dimen>
+    <dimen name="lucky_bag_award_text_height">100.0dip</dimen>
+</resources>

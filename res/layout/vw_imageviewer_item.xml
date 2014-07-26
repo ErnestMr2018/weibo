@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.SplitTouchImageView android:id="@id/ivPicView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/gifWebViewStub" android:layout="@layout/vw_imageviewer_item_gif_stub" android:inflatedId="@id/gifWebView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0px" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:id="@id/ivPicItemLoading" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.sina.weibo.view.LoadingProgressBar android:id="@id/ivPreImage" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateOnly="false" weibo:loading_progress="@drawable/loading_progress_background" weibo:image_loading="@drawable/image_loading_background" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

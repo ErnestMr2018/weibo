@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:id="@id/tv_card_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_margin_top" android:layout_marginBottom="2.0dip" />
+    <ImageView android:id="@id/iv_card_pic" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:minHeight="90.0dip" />
+</LinearLayout>

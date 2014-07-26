@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uicodes>
+	<uicode code="10000001" name="com.sina.weibo.HomeListActivity" />
+	<uicode code="10000002" name="com.sina.weibo.DetailWeiboActivity" />
+	<uicode code="10000003" name="com.sina.weibo.SearchResultActivity" />
+	<uicode code="10000004" name="com.sina.qrcode.CaptureActivity" />
+	<uicode code="10000005" name="com.sina.weibo.InterestActivity" />
+	<uicode code="10000011" name="com.sina.weibo.PageActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardMblogListActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardLikeListActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardInfoListActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardPicListActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardProductListActivity" />
+	<uicode code="10000012" name="com.sina.weibo.CardUserListActivity" />
+
+	<!-- 找朋友 好友 用户资料页 用户详细资料页 -->
+	<uicode code="10000006" name="com.sina.weibo.GetFriendActivity" />
+	<uicode code="10000007" name="com.sina.weibo.ContactsActivity" />
+	<uicode code="10000198" name="com.sina.weibo.ProfileInfoActivity" /><!-- page一级页面 -->
+	<uicode code="10000197" name="com.sina.weibo.MyInfoActivity2" /><!-- page一级页面 -->
+	<uicode code="10000011" name="com.sina.weibo.MyInfoTabActivity" /><!-- page一级页面 -->
+	<uicode code="10000011" name="com.sina.weibo.InfoPageActivity" /><!-- page一级页面 -->
+	<uicode code="10000013" name="com.sina.weibo.UserInfoDetailActivity" /><!-- 用户详细资料页 -->
+	<uicode code="10000017" name="com.sina.weibo.EditActivity" />
+	<uicode code="10000003" name="com.sina.weibo.ContactsSearchResultActivity" /><!-- 好友搜索页 -->
+
+	<!-- Square -->
+	<uicode code="10000010" name="com.sina.weibo.SquareActivity" />
+
+	<!-- Notice -->
+	<uicode code="10000018" name="com.sina.weibo.MessageGroup" />
+	<uicode code="10000019" name="com.sina.weibo.NoticeListActivity" mode="0" />
+	<uicode code="10000020" name="com.sina.weibo.NoticeListActivity" mode="1" />
+	<uicode code="10000021" name="com.sina.weibo.LikeListActivity" />
+	<uicode code="10000024" name="com.sina.weibo.InviteListActivity" />
+	
+	<!-- Meyou -->
+	<uicode code="10000023" name="com.sina.weibo.AddCloseFriendsActivity" />
+	
+	<!-- 热门话题 -->
+	<uicode code="10000025" name="com.sina.weibo.WeiboCommonListActivity" mode="13" />
+	<!-- 热门微博 -->
+	<uicode code="10000044" name="com.sina.weibo.WeiboCommonListActivity" mode="11" />
+	
+	<!-- 收藏微博页面 -->
+	<uicode code="10000026" name="com.sina.weibo.FavoriteActivity"/>
+	
+	<!-- 主题页面 -->
+	<uicode code="10000027" name="com.sina.weibo.MyThemeActivity"/>
+	
+	<!-- 更多主题页面 -->
+	<uicode code="10000028" name="com.sina.weibo.OnlineThemeActivity"/>
+	
+	<!-- New Regist -->
+	<uicode code="10000058" name="com.sina.weibo.SwitchUser" />
+	<uicode code="10000059" name="com.sina.weibo.NewRegistHomeActivity" />
+	<uicode code="10000060" name="com.sina.weibo.SelectCountryActivity" />	
+	<uicode code="10000061" name="com.sina.weibo.NewRegistWebActivity" />
+	<uicode code="10000062" name="com.sina.weibo.VerificationCodeActivity"/>
+	<uicode code="10000063" name="com.sina.weibo.NewFillInfoActivity"/>
+	<uicode code="10000064" name="com.sina.weibo.InterestPeopleActivity"/>
+	<uicode code="10000065" name="com.sina.weibo.YouMayKnowActivity" mode="27" />
+	<uicode code="10000067" name="com.sina.weibo.YouMayKnowActivity" mode="28" />
+	<uicode code="10000066" name="com.sina.weibo.UserGuideContactActivity"/>
+	<uicode code="10000066" name="com.sina.weibo.NewRegistContact"/>
+	
+	<!-- add 3.5.0 -->
+	<uicode code="10000048" name="com.sina.weibo.ContactsSynActivity"/><!-- 找朋友 通讯录 -->
+	<uicode code="10000051" name="com.sina.weibo.WeiboCommonListActivity" mode="16"/><!-- 找朋友 猜你认识-->
+	<uicode code="10000069" name="com.sina.weibo.WeiboCommonListActivity" mode="7"/><!-- 广场 人气草根 -->
+	
+	<!-- add 3.6.0 -->
+	<uicode code="10000074" name="com.sina.weibo.ImageViewer"/><!-- 查看大图页面 统计大图进入正文的量 -->
+	<!-- <uicode code="10000073" name="com.sina.weibo.MessageList" />--><!-- 私信对话页 媒体私信来源统计 -->
+	<uicode code="10000073" name="com.sina.weibo.weiyou.DMMessageList" /><!-- 私信对话页 媒体私信来源统计 -->
+	
+	<uicode code="10000079" name="com.sina.weibo.NearByActivity" /><!-- 周边的人 -->
+	<uicode code="10000078" name="com.sina.weibo.ShakeActivity" /><!-- 摇一摇 -->
+	<uicode code="10000077" name="com.sina.weibo.FindFriendActivity" /><!-- 找朋友 -->
+	<uicode code="10000195" name="com.sina.weibo.UserWeiboAttentionFansList" mode="12" /><!-- 个人主页 某人关注列表 --><!--430修改-->
+	<uicode code="10000081" name="com.sina.weibo.UserWeiboAttentionFansList" mode="13" /><!-- 个人主页 某人粉丝列表 -->
+	<uicode code="10000102" name="com.sina.weibo.QRCodeActivity" /><!-- 二维码  -->
+	
+	<!-- add 4.0.0 相互关注分组原先分配的uicode是10000104，但后来又移除该需求。暂时保留逻辑，只修改uicode -->
+	<uicode code="10000001" name="com.sina.weibo.HomeListActivity" mode="1"/>
+	<uicode code="10000106" name="com.sina.weibo.WatermarkPageActivity" /><!-- 带着微博去旅行活动入口 -->
+	<uicode code="10000107" name="com.sina.weibo.WaterMarkEditActivity" /><!-- 水印发布页面-->
+	<uicode code="10000011" name="com.sina.weibo.CardListActivity" /><!-- cardlist用page 一级页面uicode-->
+	
+	<uicode code="10000115" name="com.sina.weibo.AccountManager" /><!-- 账户管理页面uicode-->
+	<uicode code="10000116" name="com.sina.weibo.UserLoginEntranceActivity" /><!-- 新用户注册登录页面uicode-->
+	
+	<uicode code="10000105" name="com.sina.weibo.GroupManageActivity" mode="0"/><!-- 分组管理页面-->
+	<uicode code="10000114" name="com.sina.weibo.GroupManageActivity" mode="1"/><!-- 好友圈管理页面-->
+	<uicode code="10000131" name="com.sina.weibo.GroupMembersActivity"/><!-- 成员管理页面-->
+	<uicode code="10000130" name="com.sina.weibo.EditGroupActivity"/><!-- 选择分组页面-->
+	
+	<uicode code="10000125" name="com.sina.weibo.AEditText"/><!--分组民称编辑页面-->
+	
+	<!-- <uicode code="10000127" name="com.sina.weibo.MessageMsgBoxActivity"/>--><!--未关注人私信界面-->
+	<uicode code="10000127" name="com.sina.weibo.weiyou.DMMessageMsgBoxActivity"/><!--未关注人私信界面-->
+	
+	<uicode code="10000132" name="com.sina.weibo.GroupFriendGuideActivity"/><!--好友分组推荐界面-->
+	
+	<uicode code="10000160" name="com.sina.weibo.LuckyBagActivity"/><!--红包飞活动页面-->
+	
+	<uicode code="10000150" name="com.sina.weibo.UserGuideCategoryDetail"/><!--红包飞活动页面-->
+	<uicode code="10000151" name="com.sina.weibo.UserGuideCategoryActivity"/><!--红包飞活动页面-->
+	<!--<uicode code="10000152" name="com.sina.weibo.MessageBoxActivity"/>--><!--消息箱页面-->
+	<uicode code="10000152" name="com.sina.weibo.weiyou.DMMessageBoxActivity"/><!--消息箱页面-->
+	<uicode code="10000159" name="com.sina.weibo.VisitorSquareActivity"/><!--游客广场页面-->
+	
+	<uicode code="10000183" name="com.sina.weibo.RatingObjectActivity"/><!--点评发布器-->
+	
+	<!-- add 4.3.0 -->
+	<uicode code="10000186" name="com.sina.weibo.VisitorLoginActivity"/><!-- 游客广场账号页 -->
+	<uicode code="10000189" name="com.sina.weibo.MessageAtMeActivity"/><!-- 消息箱At列表页 -->
+	<uicode code="10000188" name="com.sina.weibo.MessageCommentActivity"/><!-- 消息箱评论列表页 -->
+	<uicode code="10000194" name="com.sina.weibo.MyGroupFollowActivity"/><!-- 我的主页关注列表 -->
+	<uicode code="10000196" name="com.sina.weibo.MyGroupFollowSearchActivity"/><!-- 我的主页关注搜索 -->
+	
+	<!-- add 5个TAB游客广场的uicode 复用主版本的uicode -->
+	<uicode code="10000225" name="com.sina.weibo.VisitorHomeActivity"/><!-- 游客首页，复用HomeList -->
+	<uicode code="10000226" name="com.sina.weibo.VisitorMessageActivity"/><!-- 游客消息页-->
+	<uicode code="10000227" name="com.sina.weibo.VisitorMeActivity"/><!-- 游客我页 -->
+	<uicode code="10000228" name="com.sina.weibo.VisitorSearchActivity"/><!-- 游客广场页 -->
+	<uicode code="10000229" name="com.sina.weibo.VisitorMoreActivity"/><!-- 游客广场设置页 -->
+</uicodes>

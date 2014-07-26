@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:id="@id/ivTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_margin_top" android:singleLine="true" />
+    <RelativeLayout android:id="@id/lyPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ivTitle">
+        <ImageView android:id="@id/ivTrendPic" android:saveEnabled="true" android:layout_width="@dimen/card_product_image_dimension" android:layout_height="@dimen/card_product_image_dimension" android:scaleType="centerCrop" android:adjustViewBounds="false" />
+        <include android:id="@id/flCardPicCover" layout="@layout/pic_cover_layout" />
+    </RelativeLayout>
+    <com.sina.weibo.view.CardOperationBigButtonView android:id="@id/card_button" android:background="@drawable/default_btn_bg" android:layout_width="70.0dip" android:layout_height="fill_parent" android:minHeight="90.0dip" android:layout_below="@id/ivTitle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <include android:id="@id/content_group" android:layout_below="@id/ivTitle" layout="@layout/content_group_item" />
+</RelativeLayout>

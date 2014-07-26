@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_searchtopn_page" android:background="@drawable/market_selector_default_item_background" android:paddingLeft="0.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_searchtopn_list_block" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/tv_searchtopn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/market_font_12" android:gravity="center" android:id="@id/tv_searchtopn_numer" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" />
+        <TextView android:textSize="@dimen/market_font_16" android:ellipsize="end" android:gravity="center" android:id="@id/tv_searchtopn_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/tv_searchtopn_bg" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/market_font_12" android:gravity="center" android:id="@id/tv_searchtopn_searchtimes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_searchtopn_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/rl_history_list_block" android:layout_alignParentBottom="true" />
+</RelativeLayout>

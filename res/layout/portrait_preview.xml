@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lyPortraitPreRoot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPortraitPreview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/camera_toolbar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnCancel" android:background="@drawable/common_button_black_bg" android:layout_width="44.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/cancel" android:layout_centerVertical="true" android:contentDescription="@string/imageviewer_back" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btnOk" android:background="@drawable/camera_button_blue_bg" android:layout_width="44.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/notification_send" />
+    </RelativeLayout>
+</LinearLayout>

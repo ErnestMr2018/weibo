@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tabsRegion" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tabsBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/titlebar_icon_margin" android:scaleType="center" />
+        <FrameLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/profile_info_tabs_layout_height">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tabsLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/tabRect" android:layout_width="@dimen/profile_info_tab_rect_width" android:layout_height="@dimen/profile_info_tabs_shadow_height" android:scaleType="fitXY" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right|center" android:id="@id/tabsRightButton" android:layout_width="@dimen/titlebar_icon_width" android:layout_height="@dimen/titlebar_icon_height" android:layout_marginRight="@dimen/titlebar_icon_margin">
+            <ImageView android:layout_gravity="center" android:id="@id/tabsOptions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <ImageView android:layout_gravity="center" android:id="@id/tabsLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" />
+        </FrameLayout>
+    </FrameLayout>
+    <com.sina.weibo.view.ProfileInfoFilterGroupView android:id="@id/tabsFilter" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

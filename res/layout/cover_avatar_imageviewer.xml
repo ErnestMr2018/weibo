@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ivRootView" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/caImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" />
+    <RelativeLayout android:id="@id/caivBottomView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/caImage">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/changePicture" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/caIvSave" android:visibility="gone" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

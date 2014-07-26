@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <com.sina.weibo.view.RoundedImageView android:layout_gravity="center" android:id="@id/iv_card_pic" android:saveEnabled="true" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="64.0dip" android:maxHeight="64.0dip" weibo:round_background="false" />
+    <TextView android:textSize="13.0sp" android:gravity="center" android:id="@id/tv_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip" android:singleLine="true" />
+</LinearLayout>

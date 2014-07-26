@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_3_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/lyItemPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/portrait_common_margin_right">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0dip" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_middle_style" />
+        <ImageView android:id="@id/ivItemPortraitV" style="@style/portrait_avatar_style" />
+    </FrameLayout>
+    <ImageView android:id="@id/ivPic" android:visibility="gone" android:layout_width="@dimen/like_item_width" android:layout_height="63.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:scaleType="center" android:layout_alignParentRight="true" />
+    <com.sina.weibo.view.MBlogTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/tvContent" android:layout_width="@dimen/like_item_width" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:maxLines="3" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/textviews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80.0dip" android:layout_toRightOf="@id/lyItemPortrait" android:layout_centerVertical="true">
+        <com.sina.weibo.view.MemberTextView android:textSize="16.0sp" android:typeface="normal" android:ellipsize="end" android:id="@id/tvItemName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.sina.weibo.view.MBlogTextView android:textSize="14.0sp" android:id="@id/tvItemContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/toolbar_icon_like_highlighted" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0sp" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/pay_ll_result" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@id/pay_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pay_iv_successed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commercialize_payment_icon_success" />
+            <TextView android:textSize="24.0sp" android:id="@id/pay_tv_successed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:id="@id/pay_tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:text="" android:layout_below="@id/pay_ly" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</merge>

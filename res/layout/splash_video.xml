@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.VideoViewSystem android:layout_gravity="center" android:id="@id/splash_video_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/video_back" android:background="@raw/splash_video_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/start_button" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/tvNavigater_clickable" android:background="@drawable/navigater_clickable_bg" android:layout_width="194.66998dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/navigater_startbtn_margin_bootom" android:text="@string/guide_start" android:shadowColor="#26000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tvNavigater_clickable" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyNavigater_theme_selection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivNavigater_theme_selection" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_checkbox_checked" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/guide_update_current_theme" android:shadowColor="#4c000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.5" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyNavigater_selection" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivNavigater_selection" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_checkbox_checked" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/guide_share_weibo" android:shadowColor="#4c000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

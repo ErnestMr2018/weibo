@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="left" android:id="@id/tv_notify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/input_access" />
+    <ImageView android:gravity="left" android:id="@id/iv_access_image" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/login_weibo" android:scaleType="fitCenter" android:minHeight="26.669983dip" />
+    <ProgressBar android:id="@id/pg_load_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+    <TextView android:id="@id/tv_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/communicating_failed" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_access" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:id="@id/tv_change_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/change_access" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_buttons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+        <Button android:id="@id/bn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/bn_send" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_button_send" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

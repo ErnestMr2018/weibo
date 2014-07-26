@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_rating" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="66.0dip">
+        <com.sina.weibo.view.SimpleRatingBar android:id="@id/rb_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/tv_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:singleLine="true" />
+</LinearLayout>

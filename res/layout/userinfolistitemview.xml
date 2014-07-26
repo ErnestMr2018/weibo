@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_common_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <FrameLayout android:id="@id/lyPortrait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portrait_common_margin_left" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/portrait_common_margin_right">
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivItemPortrait" android:saveEnabled="true" android:scaleType="fitXY" android:adjustViewBounds="false" weibo:corner_radius="@dimen/small_portrait_round_radius" weibo:cover_border_width="1.0px" weibo:cover_border_color="#0d000000" weibo:round_background="true" style="@style/portrait_middle_style" />
+        <ImageView android:id="@id/ivPortraitV" style="@style/portrait_avatar_style" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/lyPortrait" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff0099cc" android:ellipsize="end" android:id="@id/tvNick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/tvItemNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

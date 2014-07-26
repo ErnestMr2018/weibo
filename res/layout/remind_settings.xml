@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/settings_margin_top" android:paddingBottom="@dimen/settings_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindAtLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindAtText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_at" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <TextView android:id="@id/remindAtType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_type_all" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SettingSubText" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindCommentLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindCommentText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_comment" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/remindCommentArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindFansLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindFansText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_fans" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <TextView android:id="@id/remindFansType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_type_all" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SettingSubText" />
+        </RelativeLayout>
+        <TextView android:gravity="left|center" android:id="@id/pushSettingsTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_sub_title" style="@style/SettingTitleText" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindMessageLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindMessageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_message" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindMessageCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindFriendsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindFriendsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_friends" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindFriendsCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindSpAttentionLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindSpAttentionText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_sp_attentions" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindSpAttentionCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divider5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/remindHotTopicNotificationLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height">
+            <TextView android:gravity="center_vertical" android:id="@id/remindHotTopicNotificationText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_hottopic_notification" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <com.sina.weibo.view.SwitchButton android:id="@id/remindHotTopicNotificationCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_text_padding_right" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/remindSilentTimeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:ellipsize="end" android:id="@id/remindSilentTimeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_outter_setting_silent" android:singleLine="true" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/remindSilentTimeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/innerSettingLayout" android:layout_width="fill_parent" android:layout_height="@dimen/settings_item_height" android:layout_marginTop="@dimen/settings_margin_top">
+            <TextView android:ellipsize="end" android:id="@id/innerSettingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pref_inner_setting_title" android:singleLine="true" android:layout_centerVertical="true" style="@style/SettingMainText" />
+            <ImageView android:id="@id/innerSettingArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

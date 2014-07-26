@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/lyGroup" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <ImageView android:id="@id/ivGroupSelect" android:clickable="false" android:layout_width="38.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/lyGroupName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ivGroupSelect" android:layout_alignParentRight="true">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvGroupName" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/tvGroupPrompt" android:layout_centerVertical="true" android:imeOptions="actionDone" />
+            <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tvAdd" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:id="@id/tvGroupPrompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ivDivider" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0px" />
+</LinearLayout>

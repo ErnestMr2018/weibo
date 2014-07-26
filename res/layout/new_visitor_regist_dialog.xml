@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_reg_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/input_layout" android:background="@drawable/pop_input_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:textColorHint="@color/empty_view_text_color" android:id="@id/phoneNum" android:background="@color/login_input_bg_color" android:paddingLeft="@dimen/new_regist_user_padding_left" android:layout_width="0.0dip" android:layout_height="@dimen/visitor_dialog_regist_height_et" android:hint="@string/visitor_dialog_regist_phone_num" android:singleLine="true" android:layout_weight="1.0" android:inputType="phone" />
+            <ImageView android:id="@id/login_user_clear_btn" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/login_clear_btn" android:scaleType="centerInside" />
+        </LinearLayout>
+        <View android:background="@drawable/pop_input_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15.0sp" android:textColor="@color/main_content_text_color" android:textColorHint="@color/empty_view_text_color" android:id="@id/password" android:background="@color/login_input_bg_color" android:paddingLeft="@dimen/new_regist_user_padding_left" android:layout_width="0.0dip" android:layout_height="@dimen/visitor_dialog_regist_height_et" android:hint="@string/visitor_dialog_regist_password" android:singleLine="true" android:layout_weight="1.0" android:inputType="textPassword" />
+            <ImageView android:id="@id/login_password_clear_btn" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="6.0dip" android:src="@drawable/login_clear_btn" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/main_content_subtitle_text_color" android:ellipsize="end" android:id="@id/tv_tips" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pwd_tips" android:maxLines="1" />
+    <Button android:textSize="18.0sp" android:textColor="@color/navigationbar_highlighted_text_color" android:id="@id/btRegist" android:background="@drawable/pop_dialog_btn_orange_background" android:layout_width="fill_parent" android:layout_height="@dimen/visitor_dialog_regist_height_et" android:text="@string/visitor_verify_code_ok" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content_group_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:minHeight="90.0dip" android:layout_toLeftOf="@id/card_button" android:layout_toRightOf="@id/lyPortrait" android:layout_below="@id/ivTitle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.view.MemberTextView android:textSize="15.0sp" android:textColor="#ff202020" android:ellipsize="end" android:id="@id/tvTrendTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:singleLine="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff484d59" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvTrendDesc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="1" android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:ellipsize="end" android:gravity="bottom" android:id="@id/tvTrendTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:singleLine="true" android:layout_weight="0.0" />
+</LinearLayout>

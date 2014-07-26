@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moudles>
+	<moudle id="901" name="weibo" />
+	<moudle id="902" name="appmarket" />
+	<moudle id="903" name="dianxin" />
+	<moudle id="904" name="popupsdk" />
+	<moudle id="905" name="focusmedia" />
+	<moudle id="906" name="vparser" />
+</moudles>

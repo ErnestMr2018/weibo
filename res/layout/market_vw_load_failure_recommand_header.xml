@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/load_failure_recommand_header_layout" android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_failure" android:background="@drawable/market_icon_notice_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/market_font_14" android:gravity="center" android:id="@id/tv_reload_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/market_detail_app_notexist" android:layout_below="@id/iv_failure" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:id="@id/item_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/market_recomment_item_distance_h" android:layout_marginRight="@dimen/market_recomment_item_distance_h" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/user_info_name_text" android:gravity="center_vertical" android:id="@id/tvItemName" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="18.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/userinfo_panel_textview_title" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/triangle" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_timeline" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.appmarket.widget.AppCardView android:id="@id/ll_app_subject" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.BannerCardView android:id="@id/ll_recommend_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.SuggestCardView android:id="@id/ll_suggest_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.sina.weibo.appmarket.widget.SubjectCardView android:id="@id/ll_subject_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/rl_footview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/market_vw_generic_listview_footer" />
+</LinearLayout>

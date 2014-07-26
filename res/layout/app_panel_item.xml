@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/app_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center" android:id="@id/shader" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/new_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+</merge>

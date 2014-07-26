@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlUserinfo" android:clickable="true" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_marginTop="@dimen/cardlist_padding_y">
+        <ImageView android:id="@id/ivPortrait" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" />
+        <ImageView android:id="@id/ivPortraitMask" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="-7.0dip" android:layout_marginBottom="-3.0dip" android:layout_alignRight="@id/ivPortrait" android:layout_alignBottom="@id/ivPortrait" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="38.0dip" android:layout_toRightOf="@id/ivPortrait" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/tvNick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/lyNickRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tvNick" android:layout_alignRight="@id/tvNick" android:layout_alignBottom="@id/tvNick">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_info_icon_marginleft" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivLeaguer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_info_icon_marginleft" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/ivTaobao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/user_info_icon_marginleft" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:ellipsize="end" android:id="@id/tvVerifyInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" android:layout_below="@id/tvNick" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ivInfoTriangle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/card_coupon_triangle_right_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llApps" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_below="@id/rlUserinfo">
+        <com.sina.weibo.view.CardAppButton android:id="@id/cabWeibo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.sina.weibo.view.CardAppButton android:id="@id/cabFollow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.sina.weibo.view.CardAppButton android:id="@id/cabFan" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/ivInfoDivider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_below="@id/rlUserinfo" android:layout_alignTop="@id/llApps" />
+</merge>

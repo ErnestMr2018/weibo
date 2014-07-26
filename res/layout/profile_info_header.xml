@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <RelativeLayout android:id="@id/coverRegion" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/profile_info_cover_display_height">
+        <ImageView android:background="@drawable/profile_cover_shadow" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true" />
+        <com.sina.weibo.view.RoundedImageView android:id="@id/ivPortrait" android:background="@drawable/userinfo_shadow_person" android:layout_width="@dimen/profile_info_portrait_shadow_width" android:layout_height="@dimen/profile_info_portrait_shadow_height" android:layout_marginTop="@dimen/profile_info_portrait_shadow_margintop" android:src="@drawable/portrait" android:scaleType="fitXY" android:layout_centerHorizontal="true" weibo:corner_radius="1.0dip" weibo:round_background="true" />
+        <ImageView android:id="@id/ivPortraitMask" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="-7.0dip" android:layout_marginBottom="-3.0dip" android:layout_alignRight="@id/ivPortrait" android:layout_alignBottom="@id/ivPortrait" />
+        <View android:id="@id/portraitClickRegion" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_above="@id/relationBtns" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/profile_info_nick_textsize" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvNick" android:layout_width="wrap_content" android:layout_height="@dimen/profile_info_nick_height" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:singleLine="true" android:layout_below="@id/ivPortrait" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/profile_info_nick_height" android:layout_alignRight="@id/tvNick" android:layout_alignBottom="@id/tvNick">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_info_icon_marginleft" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivMember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_info_icon_marginleft" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivTaobao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/profile_info_icon_marginleft" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/relationBtns" android:layout_width="wrap_content" android:layout_height="36.0dip" android:minWidth="264.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/following" android:paddingTop="2.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/profile_info_follow_num_textsize" android:ellipsize="end" android:id="@id/followingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/following" android:singleLine="true" />
+                <TextView android:textSize="@dimen/profile_info_follow_num_textsize" android:ellipsize="end" android:id="@id/followingNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivRelationDivider" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/fan" android:paddingLeft="14.0dip" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/profile_info_follow_num_textsize" android:ellipsize="end" android:id="@id/fanName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/fans" android:singleLine="true" />
+                <TextView android:textSize="@dimen/profile_info_follow_num_textsize" android:ellipsize="end" android:id="@id/fanNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/downLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sina.weibo.view.ProfileInfoDetailView android:id="@id/tvVerifyInfo" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/lyBtns" android:layout_width="wrap_content" android:layout_height="48.0dip">
+            <com.sina.weibo.view.HorizontalMixButton android:id="@id/message" android:clickable="true" android:layout_width="@dimen/profile_info_btn_width" android:layout_height="@dimen/profile_info_btn_height" android:layout_marginRight="@dimen/profile_info_btn_margin" weibo:mixText="@string/btn_message" weibo:mixTextSize="@dimen/page_header_btn_text_size" weibo:mixLeftSpace="4.0dip" />
+            <com.sina.weibo.view.HorizontalMixButton android:id="@id/editRelation" android:background="@drawable/userinfo_relationship_invitebutton" android:clickable="true" android:layout_width="@dimen/profile_info_btn_width" android:layout_height="@dimen/profile_info_btn_height" android:layout_toRightOf="@id/message" weibo:mixText="@string/attend" weibo:mixTextSize="@dimen/page_header_btn_text_size" weibo:mixLeftSpace="4.0dip" weibo:mixRightDrawable="@drawable/userinfo_relationship_indicator_arrow_down" weibo:mixRightSpace="5.0dip" />
+            <com.sina.weibo.view.HorizontalMixButton android:id="@id/editInfo" android:background="@drawable/userinfo_relationship_invitebutton" android:clickable="true" android:layout_width="@dimen/page_info_btn_width" android:layout_height="@dimen/page_info_btn_height" weibo:mixText="@string/btn_edit_info" weibo:mixTextSize="@dimen/page_header_btn_text_size" weibo:mixLeftSpace="4.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

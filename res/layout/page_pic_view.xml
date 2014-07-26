@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_pic" android:layout_width="54.0dip" android:layout_height="54.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_card_pic" android:saveEnabled="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="50.0dip" android:maxHeight="50.0dip" />
+    </FrameLayout>
+</LinearLayout>

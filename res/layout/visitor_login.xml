@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/vistor_login_rel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/lySinaIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:src="@drawable/visitordiscover_signup_logo" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lyLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="66.0dip" android:layout_alignParentBottom="true">
+            <Button android:textSize="17.0sp" android:textColor="@color/main_button_text_color_for_light_color_button" android:id="@id/bnManageRegist" android:background="@drawable/login_button_big_orange_bg" android:layout_width="266.0dip" android:layout_height="46.0dip" android:text="@string/login_manag_new_reg" />
+            <Button android:textSize="17.0sp" android:textColor="@color/main_button_text_color_for_deep_color_button" android:id="@id/bnLogin" android:background="@drawable/common_button_big_blue_bg" android:layout_width="266.0dip" android:layout_height="46.0dip" android:layout_marginTop="10.0dip" android:text="@string/login_manag_new_account" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

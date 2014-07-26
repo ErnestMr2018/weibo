@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="market_detail_more_items">
+        <item>返回首頁</item>
+        <item>轉發到微博</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="market_subject_more_items">
+        <item>返回首頁</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="market_share_weibo_contents">
+        <item>%s，這個有點意思[可愛]~</item>
+        <item>%s，真心不錯！[呵呵]</item>
+        <item>樂，不遲疑[嘻嘻]~</item>
+        <item>“%s”挺好的~</item>
+        <item>[太開心] “%s”太帥了！</item>
+    </string-array>
+    <string-array name="market_report_item">
+        <item>無法下載</item>
+        <item>無法安裝</item>
+        <item>可安裝但無法啟動</item>
+        <item>版本太舊需要更新</item>
+        <item>惡意扣費</item>
+        <item>攜帶病毒</item>
+    </string-array>
+</resources>

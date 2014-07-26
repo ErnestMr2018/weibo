@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:weibo="http://schemas.android.com/apk/res/com.sina.weibo">
+    <ImageView android:id="@id/ivPic11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/ivIcon11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic11" android:layout_alignBottom="@id/ivPic11" />
+    <ImageView android:id="@id/ivPic12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic11" />
+    <ImageView android:id="@id/ivIcon12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic12" android:layout_alignBottom="@id/ivPic12" />
+    <ImageView android:id="@id/ivPic13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic12" />
+    <ImageView android:id="@id/ivIcon13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic13" android:layout_alignBottom="@id/ivPic13" />
+    <ImageView android:id="@id/ivPic21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_below="@id/ivPic11" />
+    <ImageView android:id="@id/ivIcon21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic21" android:layout_alignBottom="@id/ivPic21" />
+    <ImageView android:id="@id/ivPic22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic21" android:layout_below="@id/ivPic11" />
+    <ImageView android:id="@id/ivIcon22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic22" android:layout_alignBottom="@id/ivPic22" />
+    <ImageView android:id="@id/ivPic23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic22" android:layout_below="@id/ivPic11" />
+    <ImageView android:id="@id/ivIcon23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic23" android:layout_alignBottom="@id/ivPic23" />
+    <ImageView android:id="@id/ivPic31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_below="@id/ivPic21" />
+    <ImageView android:id="@id/ivIcon31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic31" android:layout_alignBottom="@id/ivPic31" />
+    <ImageView android:id="@id/ivPic32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic31" android:layout_below="@id/ivPic21" />
+    <ImageView android:id="@id/ivIcon32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic32" android:layout_alignBottom="@id/ivPic32" />
+    <ImageView android:id="@id/ivPic33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_multi_pic_margin" android:layout_marginTop="@dimen/feed_multi_pic_margin" android:scaleType="centerCrop" android:layout_toRightOf="@id/ivPic32" android:layout_below="@id/ivPic21" />
+    <ImageView android:id="@id/ivIcon33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/ivPic33" android:layout_alignBottom="@id/ivPic33" />
+    <com.sina.weibo.view.BigImageView android:id="@id/livSinglePic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="matrix" android:layout_centerInParent="true" />
+    <com.sina.weibo.view.LoadingProgressBar android:id="@id/loading_image" android:padding="30.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:indeterminateOnly="false" android:layout_centerInParent="true" weibo:loading_progress="@drawable/loading_progress_background_detail" />
+    <ImageView android:id="@id/ivSingleIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/livSinglePic" android:layout_alignBottom="@id/livSinglePic" />
+    <ViewStub android:id="@id/stub_wgfGifPic" android:layout="@layout/detailweibo_gifview_stub" android:inflatedId="@id/wgfGifPic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.sina.weibo.card.view.MainCardView android:id="@id/mcvCard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</merge>

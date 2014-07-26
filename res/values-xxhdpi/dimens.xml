@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_button_icon_width">30.0dip</dimen>
+    <dimen name="card_button_icon_height">30.0dip</dimen>
+    <dimen name="lucky_bag_top">36.0dip</dimen>
+    <dimen name="lucky_bag_button_top">38.0dip</dimen>
+    <dimen name="lucky_bag_button_bottom">42.0dip</dimen>
+    <dimen name="lucky_bag_margin_bottom">20.0dip</dimen>
+    <dimen name="lucky_bag_award_text_width">230.0dip</dimen>
+    <dimen name="lucky_bag_award_text_height">100.0dip</dimen>
+    <dimen name="visitor_dialog_title_maxwidth">600.0px</dimen>
+    <dimen name="visitor_home_dashwidth">490.0px</dimen>
+    <dimen name="visitor_home_dashposition">140.0px</dimen>
+    <dimen name="visitor_home_housepadding">37.299988px</dimen>
+    <dimen name="visitor_home_housewidth">263.1953px</dimen>
+    <dimen name="visitor_home_househeight">252.0px</dimen>
+    <dimen name="visitor_home_dashgradient">35.0px</dimen>
+</resources>
